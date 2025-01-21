@@ -1,7 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .quicksand-font {
   font-family: "Quicksand", serif;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-font {
+  font-family: "Raleway", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -156,6 +164,158 @@
   font-weight: 700;
   font-size: 0.9rem;
 }
+/* Arrow styles */
+.arrow {
+  display: flex;
+  width: 130px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.one,
+.two {
+  background: orange;
+  margin: 50px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Our story related styles */
+.story {
+  margin: 0px auto;
+
+  background: linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3),
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url("/assets/bg.png");
+}
+.story-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 18px;
+}
+.story-card {
+  border-radius: 16px;
+
+  background: rgb(255, 255, 255);
+}
+.story-card-1 {
+  border-radius: 16px;
+  width: 540px;
+  background: rgb(255, 255, 255);
+}
+.story-grid {
+  width: 600px;
+}
+.story-title {
+  font-size: 2.9rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+}
+.story-card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 30px;
+}
+.story-card-title-2 {
+  font-weight: 700;
+  font-style: 0.9rem;
+  padding: 30px;
+  line-height: 28px;
+  margin-top: -40px;
+}
+.story img {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.story-description {
+  font-family: Raleway;
+  line-height: 28.76px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #666666;
+  padding: 30px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  border-radius: 16px;
+}
+.view-btn {
+  margin: 50px 0;
+  padding: 50px 0;
+  text-align: center;
+}
+.btn-card1 {
+  background-color: #3cd8e8;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 48px;
+  color: white;
+  position: relative;
+}
+.btns {
+  background-color: #95b226;
+}
+.btnd {
+  background-color: #5d58f0;
+}
+.card-button {
+  margin-top: -30px;
+  margin-left: 25px;
+  margin-bottom: 35px;
+}
+/* Footer related styles */
+footer {
+  background-color: #01acfd;
+  padding: 100px;
+  margin-top: -50px;
+  color: white;
+}
+.footer-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.footer-title {
+  margin-left: 20px;
+  color: white;
+}
+.footer-description {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+.ddd {
+  margin-bottom: 35px;
+}
+.footer-menu {
+  margin-left: 80px;
+}
+.footer-menu ul li {
+  list-style: none;
+  margin-top: 30px;
+}
+.keepin {
+  margin-bottom: 32px;
+}
+.keep img {
+  margin-right: 10px;
+}
 
 /* Media Query styles */
 @media only screen and (max-width: 576px) {
@@ -184,5 +344,16 @@
   }
   .curriculum-container {
     flex-direction: column;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: left;
+  }
+  .footer-menu {
+    margin-left: 0px;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
