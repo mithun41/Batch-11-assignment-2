@@ -330,6 +330,12 @@ footer {
     display: block;
     font-size: 30px;
   }
+  .dag {
+    display: block;
+  }
+  hr {
+    color: orange;
+  }
   .banner-container {
     flex-direction: column;
     flex-direction: column-reverse;
@@ -341,6 +347,7 @@ footer {
   .banner-title {
     font-size: 2rem;
     font-weight: 700;
+    margin: 20px 0;
   }
   .curriculum-container {
     flex-direction: column;
