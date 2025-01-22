@@ -37,6 +37,15 @@
   border-radius: 12px;
 }
 /* Header related styles */
+.mar {
+  height: 50px;
+  background-color: green;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
 .header-container {
   max-width: 1160px;
   margin: 40px auto;
@@ -104,7 +113,7 @@
 .curriculum {
   text-align: center;
   margin-bottom: 80px;
-  background-image: url("/assets/bg.png");
+  background-image: url("../assets/bg.png");
 }
 .curriculum-container {
   max-width: 1160px;
@@ -194,7 +203,7 @@
       rgba(254, 163, 1, 0.3),
       rgba(255, 255, 255, 0.3) 100%
     ),
-    url("/assets/bg.png");
+    url("../assets/bg.png");
 }
 .story-container {
   max-width: 1160px;
