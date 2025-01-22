@@ -221,9 +221,7 @@
   width: 540px;
   background: rgb(255, 255, 255);
 }
-.story-grid {
-  width: 600px;
-}
+
 .story-title {
   font-size: 2.9rem;
   font-weight: 700;
@@ -238,8 +236,8 @@
 }
 .story-card-title-2 {
   font-weight: 700;
-  font-style: 0.9rem;
-  padding: 30px;
+  font-style: 0.8rem;
+  padding: 20px;
   line-height: 28px;
   margin-top: -40px;
 }
@@ -259,6 +257,7 @@
 
 .story-grid {
   display: grid;
+  width: 601px;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   border-radius: 16px;
@@ -360,6 +359,14 @@ footer {
   }
   .curriculum-container {
     flex-direction: column;
+  }
+  .story-grid {
+    padding: 0 10px;
+  }
+  .story-card-title-2 {
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 17px;
   }
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
