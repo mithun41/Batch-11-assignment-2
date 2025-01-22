@@ -241,6 +241,7 @@
   line-height: 28px;
   margin-top: -40px;
 }
+
 .story img {
   width: 100%;
   border-top-right-radius: 16px;
@@ -269,7 +270,7 @@
 }
 .btn-card1 {
   background-color: #3cd8e8;
-  padding: 15px 20px;
+  padding: 0.9rem 1.2rem;
   border: none;
   border-radius: 48px;
   color: white;
